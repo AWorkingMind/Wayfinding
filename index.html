@@ -19,7 +19,7 @@
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/sejt.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,43 +32,48 @@
 
         <div class="row m-1">
 
-            <div class="bg-color_secondary text-center">
+            <div class="bg-color_secondary form__border text-center">
 
-                <div class="py-5">
+
+                <!--Overskrift-->
+                <div class="pt-5 pb-4">
                     <h1>Log ind</h1>
                 </div>
 
-                <!-- Form som bruges til at få oplysninger fra brugeren. Denne information sendes så til Back-end via URL -->
+
+                <!-- Form som bruges til at få oplysninger fra brugeren. Denne information sendes så til back-end via URL -->
                 <form method="get" action="kort.html">
 
-                    <!-- Denne div holder på label for at kunne blive stylet -->
-                    <div class="pb-1">
-                        <!-- Label (det man kan se over feltet) -->
+
+                    <!-- Denne div holder på label (det man kan se over feltet) for at kunne blive stylet -->
+                    <div class="pb-1 ps-5 text-start">
                         <label for="form__brugernavn">Brugernavn</label>
                     </div>
 
-                    <!-- Denne div holder på input for at kunne blive stylet -->
-                    <div class="">
-                        <!-- Input (holder på den info man taster ind i den når der bliver "submitted" -->
-                        <input id="form__brugernavn" name="form__brugernavn" type="text" value="">
+                    <!-- Denne div holder på input (holder på den info man taster ind i den når der bliver "submitted")
+                    for at kunne blive stylet -->
+                    <div class="ps-5 text-start">
+                        <input class="form__border" id="form__brugernavn" name="form__brugernavn" type="text" value="">
                     </div>
 
-                    <!-- Denne div holder på label for at kunne blive stylet -->
-                    <div class="pt-4 pb-1">
-                        <!-- Label (det man kan se over feltet) -->
+
+                    <!-- Form som bruges til at få oplysninger fra brugeren. Denne information sendes så til back-end via URL -->
+                    <div class="pt-4 pb-1 ps-5 text-start">
                         <label for="form__kodeord">Kodeord</label>
                     </div>
 
-                    <!-- Denne div holder på input for at kunne blive stylet -->
-                    <div class="pb-4">
-                        <!-- Input (holder på den info man taster ind i den når der bliver "submitted" -->
-                        <input id="form__kodeord" name="form__kodeord" type="text" value="">
+                    <!-- Denne div holder på input (holder på den info man taster ind i den når der bliver "submitted")
+                    for at kunne blive stylet -->
+                    <div class="pb-4 ps-5 text-start">
+                        <input class="form__border" id="form__kodeord" name="form__kodeord" type="text" value="">
                     </div>
 
+
                     <!-- Submit knappen -->
-                    <div class="pb-5">
-                        <input class="form_knap btn-color_cta" type="submit" value="Log ind">
+                    <div class="pb-5 pt-4">
+                        <input class="px-3 py-1 form_knap btn-color_cta form__border form__font" type="submit" value="Log ind">
                     </div>
+
 
                 </form>
 
