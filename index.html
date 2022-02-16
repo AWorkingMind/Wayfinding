@@ -28,31 +28,55 @@
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
 
+    <div class="container-fluid">
 
+        <div class="row m-1">
 
+            <div class="bg-color_secondary text-center">
 
+                <div class="py-5">
+                    <h1>Log ind</h1>
+                </div>
 
+                <!-- Form som bruges til at få oplysninger fra brugeren. Denne information sendes så til Back-end via URL -->
+                <form method="get" action="kort.html">
 
+                    <!-- Denne div holder på label for at kunne blive stylet -->
+                    <div class="pb-1">
+                        <!-- Label (det man kan se over feltet) -->
+                        <label for="form__brugernavn">Brugernavn</label>
+                    </div>
 
+                    <!-- Denne div holder på input for at kunne blive stylet -->
+                    <div class="">
+                        <!-- Input (holder på den info man taster ind i den når der bliver "submitted" -->
+                        <input id="form__brugernavn" name="form__brugernavn" type="text" value="">
+                    </div>
 
+                    <!-- Denne div holder på label for at kunne blive stylet -->
+                    <div class="pt-4 pb-1">
+                        <!-- Label (det man kan se over feltet) -->
+                        <label for="form__kodeord">Kodeord</label>
+                    </div>
 
+                    <!-- Denne div holder på input for at kunne blive stylet -->
+                    <div class="pb-4">
+                        <!-- Input (holder på den info man taster ind i den når der bliver "submitted" -->
+                        <input id="form__kodeord" name="form__kodeord" type="text" value="">
+                    </div>
 
+                    <!-- Submit knappen -->
+                    <div class="pb-5">
+                        <input class="form_knap btn-color_cta" type="submit" value="Log ind">
+                    </div>
 
+                </form>
 
+            </div>
 
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
 
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
