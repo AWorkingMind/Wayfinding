@@ -1,3 +1,33 @@
 body{
   margin: 0;
 }
+.logo{
+  height: 25vw;
+}
+
+.nav{
+  transition: max-height .2s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  z-index: 10;
+
+}
+
+.nav.show{
+  transition: max-height .2s ease-in-out;
+  max-height: 100vh;
+
+}
+.toggle {
+
+  cursor: pointer;
+}
+.fa-bars{
+  font-size: 1.7rem;
+}
+.link_text{
+  font-size: 1.3rem;
+  color: #060408;
+}
