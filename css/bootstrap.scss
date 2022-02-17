@@ -23,7 +23,10 @@ $theme-colors: (
 );
 
 $custom-colors: (
-        "logoColor": #ff00ff
+        "logoColor": #ff00ff,
+        "color_secondary": #D6D7D7,
+        "color_cta": rgb(0,133,161),
+        "color_cta_second": #8DC2D4,
 );
 
 // Merge the maps
