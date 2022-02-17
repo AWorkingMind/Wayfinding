@@ -1,6 +1,13 @@
 .form__border{
   border: black 1px solid;
+}
+
+.form__radius{
   border-radius: 20px;
+}
+
+.knap__border{
+  border: rgb(0,133,161) 1px solid;
 }
 
 body{
@@ -9,4 +16,9 @@ body{
 
 .form__font{
   font-weight: bold;
+}
+
+.form__link{
+  color: black;
+  //text-decoration: none;
 }

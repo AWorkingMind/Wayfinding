@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Login</title>
+    <title>Log ind</title>
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
@@ -19,24 +19,38 @@
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/sejt.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <script src="https://kit.fontawesome.com/577530d121.js" crossorigin="anonymous"></script>
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
+
+
+    <div class="container-fluid">
+
+        <div class="row mx-1 my-4">
+            <img class="logo" src="images/falster%20logo1.png" alt="Region Sjællands logo">
+        </div>
+
+    </div>
+
 
     <div class="container-fluid">
 
         <div class="row m-1">
 
-            <div class="bg-color_secondary form__border text-center">
+            <div class="form__radius bg-color_secondary text-center">
 
 
                 <!--Overskrift-->
-                <div class="pt-5 pb-4">
+                <div class="pt-5 pb-2">
                     <h1>Log ind</h1>
                 </div>
 
@@ -52,26 +66,29 @@
 
                     <!-- Denne div holder på input (holder på den info man taster ind i den når der bliver "submitted")
                     for at kunne blive stylet -->
-                    <div class="ps-5 text-start">
+                    <div class="pb-4 ps-5 text-start">
                         <input class="form__border" id="form__brugernavn" name="form__brugernavn" type="text" value="">
                     </div>
 
 
                     <!-- Form som bruges til at få oplysninger fra brugeren. Denne information sendes så til back-end via URL -->
-                    <div class="pt-4 pb-1 ps-5 text-start">
-                        <label for="form__kodeord">Kodeord</label>
+                    <div class="pb-1 ps-5 text-start">
+                        <label for="form__adgangskode">Adgangskode</label>
                     </div>
 
                     <!-- Denne div holder på input (holder på den info man taster ind i den når der bliver "submitted")
                     for at kunne blive stylet -->
                     <div class="pb-4 ps-5 text-start">
-                        <input class="form__border" id="form__kodeord" name="form__kodeord" type="text" value="">
+                        <input class="form__border" id="form__adgangskode" name="form__adgangskode" type="text" value="">
                     </div>
+
+                    <!-- Link til underside, hvor man kan skifte sit kodeord, som ikke er kodet -->
+                    <a class="form__link" href=""><p>Glemt adgangskode?</p></a>
 
 
                     <!-- Submit knappen -->
-                    <div class="pb-5 pt-4">
-                        <input class="px-3 py-1 form_knap btn-color_cta form__border form__font" type="submit" value="Log ind">
+                    <div class="pb-5 pt-2">
+                        <input class="px-3 py-1 btn-color_cta form__font form__radius knap__border" type="submit" value="Log ind">
                     </div>
 
 
@@ -85,5 +102,6 @@
 
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
