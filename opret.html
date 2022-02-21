@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Glemt kodeord</title>
+    <title>Opret ny konto</title>
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
@@ -69,28 +69,87 @@
 
                 <!-- Overskrift -->
                 <div class="pt-5 pb-2">
-                    <h1>Få tilsendt kodeord</h1>
+                    <h1>Opret ny konto</h1>
                 </div>
 
                 <!-- Form som bruges til at få oplysninger fra brugeren. Denne information sendes så til back-end via URL -->
-                <form method="get" action="index.html">
-
+                <form method="get" action="">
 
                     <!-- Denne div holder på label (det man kan se over feltet) for at kunne blive stylet -->
+                    <div class="pb-1 ps-5 text-start">
+                        <label for="form__fornavn">Fornavn</label>
+                    </div>
+
+                    <!-- Denne div holder på input (holder på den info man taster ind i den når der bliver "submitted")
+                    for at kunne blive stylet -->
+                    <div class="pb-4 ps-5 text-start">
+                        <input class="form__border" id="form__fornavn" name="form__fornavn" type="text" value="">
+                    </div>
+
+
+                    <!-- Form som bruges til at få oplysninger fra brugeren. Denne information sendes så til back-end via URL -->
+                    <div class="pb-1 ps-5 text-start">
+                        <label for="form__efternavn">Efternavn</label>
+                    </div>
+
+                    <!-- Denne div holder på input (holder på den info man taster ind i den når der bliver "submitted")
+                    for at kunne blive stylet -->
+                    <div class="pb-3 ps-5 text-start">
+                        <input class="form__border" id="form__efternavn" name="form__efternavn" type="text" value="">
+                    </div>
+
+
+                    <!-- Form som bruges til at få oplysninger fra brugeren. Denne information sendes så til back-end via URL -->
                     <div class="pb-1 ps-5 text-start">
                         <label for="form__emailadresse">Emailadresse</label>
                     </div>
 
                     <!-- Denne div holder på input (holder på den info man taster ind i den når der bliver "submitted")
                     for at kunne blive stylet -->
-                    <div class="pb-4 ps-5 text-start">
+                    <div class="pb-3 ps-5 text-start">
                         <input class="form__border" id="form__emailadresse" name="form__emailadresse" type="text" value="">
                     </div>
 
 
-                    <!-- Send nyt kodeord knappen -->
+                    <!-- Form som bruges til at få oplysninger fra brugeren. Denne information sendes så til back-end via URL -->
+                    <div class="pb-1 ps-5 text-start">
+                        <label for="form__genemailadresse">Gentag emailadresse</label>
+                    </div>
+
+                    <!-- Denne div holder på input (holder på den info man taster ind i den når der bliver "submitted")
+                    for at kunne blive stylet -->
+                    <div class="pb-3 ps-5 text-start">
+                        <input class="form__border" id="form__genemailadresse" name="form__genemailadresse" type="text" value="">
+                    </div>
+
+
+                    <!-- Form som bruges til at få oplysninger fra brugeren. Denne information sendes så til back-end via URL -->
+                    <div class="pb-1 ps-5 text-start">
+                        <label for="form__kodeord">Kodeord</label>
+                    </div>
+
+                    <!-- Denne div holder på input (holder på den info man taster ind i den når der bliver "submitted")
+                    for at kunne blive stylet -->
+                    <div class="pb-3 ps-5 text-start">
+                        <input class="form__border" id="form__kodeord" name="form__kodeord" type="text" value="">
+                    </div>
+
+
+                    <!-- Form som bruges til at få oplysninger fra brugeren. Denne information sendes så til back-end via URL -->
+                    <div class="pb-1 ps-5 text-start">
+                        <label for="form__genkodeord">Gentag kodeord</label>
+                    </div>
+
+                    <!-- Denne div holder på input (holder på den info man taster ind i den når der bliver "submitted")
+                    for at kunne blive stylet -->
+                    <div class="pb-3 ps-5 text-start">
+                        <input class="form__border" id="form__genkodeord" name="form__genkodeord" type="text" value="">
+                    </div>
+
+
+                    <!-- Opret knappen -->
                     <div class="pb-5">
-                        <input class="px-3 py-1 form__radius knap__border btn-color_cta form__font" type="submit" value="Send">
+                        <input class="px-3 py-1 form__radius knap__border btn-color_cta form__font" type="submit" value="Opret">
                     </div>
 
                 </form>

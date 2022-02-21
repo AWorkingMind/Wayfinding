@@ -1,0 +1,110 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Bekræft</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Christian Rasmussen, Amanda Keis, Nikita Wullf-høyer & Petra Frost.">
+    <meta name="copyright" content="Dette er et skoleprojekt i samarbejde med Nykøbing F. Sygehus.">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/sejt.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <script src="https://kit.fontawesome.com/577530d121.js" crossorigin="anonymous"></script>
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body>
+
+
+<div class="container-fluid">
+
+    <div class="row mx-1 my-4">
+        <img class="logo" src="images/falster%20logo1.png" alt="Region Sjællands logo">
+    </div>
+
+</div>
+
+
+<div class="container-fluid">
+    <div class="row m-1">
+
+        <div class="form__radius bg-color_secondary text-center">
+
+            <!-- Overskrift -->
+            <div class="pt-5 pb-2">
+                <h1>Log ind</h1>
+            </div>
+
+
+            <!-- Form som bruges til at få oplysninger fra brugeren. Denne information sendes så til back-end via URL -->
+            <form method="get" action="kort.html">
+
+
+                <!-- Denne div holder på label (det man kan se over feltet) for at kunne blive stylet -->
+                <div class="pb-1 ps-5 text-start">
+                    <label for="form__brugernavn">Brugernavn</label>
+                </div>
+
+                <!-- Denne div holder på input (holder på den info man taster ind i den når der bliver "submitted")
+                for at kunne blive stylet -->
+                <div class="pb-4 ps-5 text-start">
+                    <input class="form__border" id="form__brugernavn" name="form__brugernavn" type="text" value="">
+                </div>
+
+
+                <!-- Form som bruges til at få oplysninger fra brugeren. Denne information sendes så til back-end via URL -->
+                <div class="pb-1 ps-5 text-start">
+                    <label for="form__adgangskode">Adgangskode</label>
+                </div>
+
+                <!-- Denne div holder på input (holder på den info man taster ind i den når der bliver "submitted")
+                for at kunne blive stylet -->
+                <div class="pb-3 ps-5 text-start">
+                    <input class="form__border" id="form__adgangskode" name="form__adgangskode" type="text" value="">
+                </div>
+
+                <!-- Link til underside, hvor man kan skifte sit kodeord, som ikke er kodet -->
+                <a class="form__link" href="glemt.html"><p>Glemt adgangskode?</p></a>
+
+
+                <!-- Log ind knappen -->
+                <div class="pb-3 pt-2">
+                    <input class="px-3 py-1 btn-color_cta form__font form__radius knap__border" type="submit" value="Log ind">
+                </div>
+
+
+                <!-- Opret ny konto knappen -->
+                <div class="pb-5">
+                    <input class="px-3 py-1 form__radius knap__border btn-color_cta_second" type="submit" value="Opret ny konto">
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
