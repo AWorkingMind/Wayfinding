@@ -1,4 +1,3 @@
-
 .logo{
   height: 25vw;
 }
@@ -7,28 +6,31 @@
   transition: max-height .2s ease-in-out;
   max-height: 0;
   overflow: hidden;
-  position: relative;
   left: 0;
+  position: absolute;
+  top: 118px;
   z-index: 10;
-
+  background-color: #FFFFFF;
 }
 
 .nav.show{
   transition: max-height .2s ease-in-out;
   max-height: 100vh;
-
 }
-.toggle {
 
+.toggle {
   cursor: pointer;
 }
+
 .fa-bars{
   font-size: 1.7rem;
 }
+
 .link_text{
   font-size: 1.3rem;
   color: #060408;
 }
+
 .knap{
   height: 25px;
   width: 25px;
@@ -37,8 +39,8 @@
   top: -170px;
   left: 60px;
 border-radius: 100px;
-
 }
+
 .knap2{
   height: 25px;
   width: 25px;

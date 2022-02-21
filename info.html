@@ -14,8 +14,8 @@
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
-    <meta name="author" content="Udgiver">
-    <meta name="copyright" content="Information om copyright">
+    <meta name="author" content="Christian Rasmussen, Amanda Keis, Nikita Wullf-høyer & Petra Frost.">
+    <meta name="copyright" content="Dette er et skoleprojekt i samarbejde med Nykøbing F. Sygehus.">
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
@@ -28,38 +28,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
 
-<div class="container">
-    <!---------------------------------Logo----------------------------------------------->
-    <div class="row">
-        <img class="logo col-10 ms-1 mt-4" src="images/falster%20logo1.png" alt="Region Sjællands logo">
-        <!-------------------------logo slut------------------------------------------>
+    <div class="container">
+        <div class="row">
 
-        <!---------------------------------burger-menu---------------------------------------->
-        <div class="col-auto mt-4">
-            <div class="toggle d-flex justify-content-end">
-                <i class="fas fa-bars white-text"></i>
+            <!--Logo-->
+            <a class="col-10" href="kort.html">
+                <img class="ms-1 mt-4 logo" src="images/falster%20logo1.png" alt="Region Sjællands logo">
+            </a>
+
+            <!--Burger-menu-->
+            <div class="col-auto mt-4">
+                <div class="toggle d-flex justify-content-end">
+                    <i class="fas fa-bars white-text"></i>
+                </div>
             </div>
+
+            <div class="nav container-fluid justify-content-center">
+                <div>
+                    <div class="pt-4 pb-4">
+                        <a class="link_text mouse_hover text-decoration-none" href="kort.html">Hjælpekort</a>
+                    </div>
+                    <div class="pb-4">
+                        <a class="link_text mouse_hover text-decoration-none" href="info.html">Dine oplysninger</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </div>
 
-        <div class="nav container-fluid justify-content-center">
-            <div class="">
-                <div class="pt-4 pb-4">
-                    <a class="link_text mouse_hover text-decoration-none" href="kort.html">Hjælpekort</a>
+
+    <div class="container-fluid">
+
+        <div class="row m-1">
+            <div class="form__radius bg-color_secondary text-center">
+
+                <!-- Overskrift -->
+                <div class="pt-5 pb-2">
+                    <h1>Dine oplysninger</h1>
                 </div>
 
-                <div class="pb-4">
-                    <a class="link_text mouse_hover text-decoration-none" href="info.html">Dine oplysninger</a>
-                </div>
+                <!-- Form som bruges til at få oplysninger fra brugeren. Denne information sendes så til back-end via URL -->
+                <form method="get" action="">
+
+                    <!-- Denne div holder på label (det man kan se over feltet) for at kunne blive stylet -->
+                    <div class="pb-1 ps-5 text-start">
+                        <label for="form__fornavn">Fornavn</label>
+                    </div>
+
+                    <!-- Denne div holder på input (holder på den info man taster ind i den når der bliver "submitted")
+                    for at kunne blive stylet -->
+                    <div class="pb-4 ps-5 text-start">
+                        <input class="form__border" id="form__fornavn" name="form__fornavn" type="text" value="">
+                    </div>
+
+
+                    <!-- Form som bruges til at få oplysninger fra brugeren. Denne information sendes så til back-end via URL -->
+                    <div class="pb-1 ps-5 text-start">
+                        <label for="form__efternavn">Efternavn</label>
+                    </div>
+
+                    <!-- Denne div holder på input (holder på den info man taster ind i den når der bliver "submitted")
+                    for at kunne blive stylet -->
+                    <div class="pb-3 ps-5 text-start">
+                        <input class="form__border" id="form__efternavn" name="form__efternavn" type="text" value="">
+                    </div>
+
+
+                    <!-- Form som bruges til at få oplysninger fra brugeren. Denne information sendes så til back-end via URL -->
+                    <div class="pb-1 ps-5 text-start">
+                        <label for="form__emailadresse">Emailadresse</label>
+                    </div>
+
+                    <!-- Denne div holder på input (holder på den info man taster ind i den når der bliver "submitted")
+                    for at kunne blive stylet -->
+                    <div class="pb-3 ps-5 text-start">
+                        <input class="form__border" id="form__emailadresse" name="form__emailadresse" type="text" value="">
+                    </div>
+
+
+                    <!-- Skift kodeord knappen -->
+                    <div class="pb-3 pt-2">
+                        <input class="px-3 py-1 btn-color_cta_second form__radius knap__border" type="submit" value="Skift kodeord">
+                    </div>
+
+                    <!-- Gem knappen -->
+                    <div class="pb-5">
+                        <input class="px-3 py-1 form__radius knap__border btn-color_cta form__font" type="submit" value="Gem">
+                    </div>
+
+                </form>
 
             </div>
         </div>
 
     </div>
-    <!-------------------------------burger-menu slut------------------------------------------------>
-</div>
 
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -69,7 +136,6 @@
     const nav = document.querySelector('.nav');
     toggle.addEventListener('click', () => nav.classList.toggle('show'));
 </script>
-
 
 </body>
 </html>
