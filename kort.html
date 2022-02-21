@@ -75,8 +75,59 @@
 
         <div class="kortbox">
             <img class="col-12" src="kort%20Nyk%20Sygehus%20bare%20sejere.png" alt="">
-            <div class="knap btn"></div>
-            <div class="knap2 btn"></div>
+
+            <button type="button" class="knap" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---------------------------------------------------------->
+            <button type="button" class="knap2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="knap3 btn"></div>
+            <div class="knap4 btn"></div>
 
         </div>
 
@@ -102,17 +153,13 @@
 
 
 
-
-
-
-
-
-
 <script>
     const toggle = document.querySelector('.toggle');
     const nav = document.querySelector('.nav');
     toggle.addEventListener('click', () => nav.classList.toggle('show'));
 </script>
 
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
