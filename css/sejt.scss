@@ -52,7 +52,7 @@ border-radius: 100px;
 }
 .knap3{
   height: 25px;
-  width: 15px;
+  width: 25px;
   background-color: #ff0314;
   position: relative;
   top: -120px;
@@ -61,10 +61,36 @@ border-radius: 100px;
 }
 .knap4{
   height: 25px;
-  width: 15px;
+  width: 25px;
   background-color: #ff0314;
   position: relative;
   top: -90px;
   left: 130px;
+  border-radius: 100px;
+}
+.knap5{
+  height: 25px;
+  width: 25px;
+  background-color: #ff0314;
+  position: relative;
+  top: -200px;
+  left: 120px;
+  border-radius: 100px;
+
+}
+.close{
+  border-radius: 100px;
+  height: 40px;
+  background-color: #fffefe;
+  width: 40px;
+  font-size: 1.4rem;
+
+}
+.ja{
+  width: 100px;
+  border-radius: 100px;
+}
+.nej{
+  width: 100px;
   border-radius: 100px;
 }
