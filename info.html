@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+    <title>Dine oplysninger</title>
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
@@ -20,6 +20,9 @@
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/sejt.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <script src="https://kit.fontawesome.com/577530d121.js" crossorigin="anonymous"></script>
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +31,44 @@
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
 
+<div class="container">
+    <!---------------------------------Logo----------------------------------------------->
+    <div class="row">
+        <img class="logo col-10 ms-1 mt-4" src="images/falster%20logo1.png" alt="Region Sjællands logo">
+        <!-------------------------logo slut------------------------------------------>
 
+        <!---------------------------------burger-menu---------------------------------------->
+        <div class="col-auto mt-4">
+            <div class="toggle d-flex justify-content-end">
+                <i class="fas fa-bars white-text"></i>
+            </div>
+        </div>
+
+        <div class="nav container-fluid justify-content-center">
+            <div class="">
+                <div class="pt-4 pb-4">
+                    <a class="link_text mouse_hover text-decoration-none" href="kort.html">Hjælpekort</a>
+                </div>
+
+                <div class="pb-4">
+                    <a class="link_text mouse_hover text-decoration-none" href="info.html">Dine oplysninger</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-------------------------------burger-menu slut------------------------------------------------>
+</div>
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    const toggle = document.querySelector('.toggle');
+    const nav = document.querySelector('.nav');
+    toggle.addEventListener('click', () => nav.classList.toggle('show'));
+</script>
 
 
 </body>
